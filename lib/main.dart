@@ -30,6 +30,10 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         routes: routes,
+        theme: ThemeData(
+          primarySwatch: Colors.lightGreen,
+          primaryColor: Colors.lightGreen,
+        ),
         initialRoute: Home.screenName,
       ),
     );
