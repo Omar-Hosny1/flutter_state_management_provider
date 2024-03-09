@@ -6,6 +6,8 @@ class Product {
   late bool _inCart; // for the product item cart icon
   late bool _inFavourite; // for the product item favourite icon
   late int _quantity;
+  final imageSrc =
+      'https://img.freepik.com/premium-psd/cosmetic-product_986960-1496.jpg';
 
   Product({
     required String id,
@@ -84,5 +86,9 @@ class Product {
   resetCart() {
     _inCart = false;
     _quantity = 0;
+  }
+
+  String getFormatedPrice() {
+    return "\$ $_price USD";
   }
 }
